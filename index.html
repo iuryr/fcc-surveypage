@@ -9,15 +9,47 @@
 </div>
 <div>
 	<form id="survey-form">
+	
 	<label for="name" id="name-label">Name:</label><br>
-	<input id="name" type="text" name="name" placeholder="Nome"><br>
+	<input id="name" type="text" name="name" placeholder="Nome" required><br>
+	
 	<label for="email" id="email-label">Email:</label><br>
-	<input id="email" type="email" name="email" placeholder="Email"><br>
-	<label for="number" id="number-label">Enter a number</label><br>
+	<input id="email" type="email" name="email" placeholder="Email" required><br>
+	
+	<label for="number" id="number-label">Preencha com um número:</label><br>
 	<input id="number" type="number" name="number" min="10" max="42"
-	placeholder="Número entre 10 e 42"><br>
-	*****<label for="dropdown">Dropdown Menu</label>
-	*****<input id="dropdown" type="">
+	placeholder="Número deve estar entre 10 e 42"><br>
+	
+	<label for="dropdown">Escolha uma das opções neste dropdown-menu:</label>
+	<select id="dropdown">
+		<option value="DDOpt1">Opção 1</option>
+		<option value="DDOpt2">Opção 2</option>
+		<option value="DDOpt3">Opção 3</option>
+	</select><br>
+	
+	Escolha apenas uma das opções abaixo:<br>
+	<input type="radio" id="Ropt1" name="radiogroup" value="Ropt1">
+	<label for="Ropt1">Opção 1</label><br>
+	<input type="radio" id="Ropt2" name="radiogroup" value="Ropt2">
+	<label for="Ropt2">Opção 2</label><br>
+	<input type="radio" id="Ropt3" name="radiogroup" value="Ropt3">
+	<label for="Ropt3">Opção 3</label><br>
+	
+	Escolha uma ou várias das opções abaixo:<br>
+	<input type="checkbox" id="Copt1" name="Copt1" value="Copt1">
+	<label for="Copt1">Opção 1</label><br>
+	<input type="checkbox" id="Copt2" name="Copt2" value="Copt2">
+	<label for="Copt2">Opção 2</label><br>
+	<input type="checkbox" id="Copt3" name="Copt3" value="Copt3">
+	<label for="Copt3">Opção 3</label><br>
+	
+	<label for="addtcomment">Preencha abaixo com comentários adicionais, caso 
+	deseje:</label><br>
+	<textarea id="addtcomment" name="addtcomment" rows="5" cols="70"></textarea><br>
+	<input type="submit" id="submit" value="Enviar formulário.">
 	</form>
 </div>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+</script>
 </body>
